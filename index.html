@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/swiper.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/reset.css">
+  <meta name = "robots" content = "noindex">
+  <title>クリニック</title>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="swiper-container smart">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/clinic-smart1.jpg" alt="Swiper01"></div>
+          <div class="swiper-slide"><img src="./images/clinic-smart2.jpg" alt="Swiper02"></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div><!--/.swiper-container-->
+      <div class="swiper-container pc">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="./images/clinic-pc1.jpg" alt="Swiper03"></div>
+          <div class="swiper-slide"><img src="./images/clinic-pc2.jpg" alt="Swiper03"></div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div><!--/.swiper-container-->
+    </div><!--/.container-->
+  </header>
+  <main>
+    <div class="container">
+      <section id="greeting">
+        <div class="section">
+          <h2 class="section__text">ご挨拶</h2>
+          <p class="section__explain">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+        </div><!--/.section-->
+      </section><!--/#greeting-->
+      <section id="how-to-order">
+        <div class="section">
+          <h2 class="section__text">ご注文方法</h2>
+          <p class="section__explain">この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。この文章はダミーです。文字の大きさ、量、字間、行間等を確認するために入れています。</p>
+        </div><!--/.section-->
+      </section><!--/#how-to-order-->
+      <section id="order">
+        <div class="order-button">
+          <a href="#">ご注文はこちらから</a>
+        </div><!--/.order-button-->
+      </section><!--/#order-->
+    </div><!--/.container-->
+  </main>
+  
+  <script src="./js/swiper.min.js"></script>
+  <script>
+     var swiper = new Swiper('.swiper-container',{
+     navigation:{
+       nextEl:'.swiper-button-next',
+       prevEl:'.swiper-button-prev',
+       },
+       loop:true,
+       autoplay:{
+         delay:3000,
+         disableOnInteraction:true
+       },
+     });
+   </script>
+</body>
+</html>
